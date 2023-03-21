@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TinkeringAPI", "TinkeringAPI.csproj", "{A6F6154D-E49F-4319-AD8E-DF4AB235B8B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTinkeringAPI", "..\TestTinkeringAPI\TestTinkeringAPI.csproj", "{CBF0476D-67F8-461A-869F-CF5E683134CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{A6F6154D-E49F-4319-AD8E-DF4AB235B8B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6F6154D-E49F-4319-AD8E-DF4AB235B8B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6F6154D-E49F-4319-AD8E-DF4AB235B8B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF0476D-67F8-461A-869F-CF5E683134CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF0476D-67F8-461A-869F-CF5E683134CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF0476D-67F8-461A-869F-CF5E683134CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF0476D-67F8-461A-869F-CF5E683134CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
