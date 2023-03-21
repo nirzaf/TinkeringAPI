@@ -14,7 +14,7 @@ public class EmployeeController : Controller
         _context = context;
     }
 
-    [HttpGet]
+    [HttpGet("employees")]
     public IActionResult GetAllEmployees()
     {
         var employees = _context.Employees.ToList();
@@ -34,7 +34,7 @@ public class EmployeeController : Controller
     }
     
     //Add new employee
-    [HttpPost]
+    [HttpPost("employee/add")]
     public IActionResult AddEmployee([FromBody] Employee employee)
     {
         _context.Employees.Add(employee);
@@ -52,7 +52,7 @@ public class EmployeeController : Controller
     }
     
     //Update employee
-    [HttpPut("{id}")]
+    [HttpPut("update/{id}")]
     public IActionResult UpdateEmployee(long id, [FromBody] Employee employee)
     {
         var employeeToUpdate = _context.Employees.FirstOrDefault(e => e.Id == id);
@@ -76,7 +76,7 @@ public class EmployeeController : Controller
     }
     
     //Delete employee
-    [HttpDelete("{id}")]
+    [HttpDelete("employee/delete/{id}")]
     public IActionResult DeleteEmployee(long id)
     {
         var employeeToDelete = _context.Employees.FirstOrDefault(e => e.Id == id);
